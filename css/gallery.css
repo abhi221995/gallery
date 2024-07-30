@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON CLASS */
+
+:root {
+    --yellow-gold: rgb(255, 223, 0);
+    --shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --dark-blue: rgb(23, 52, 120);
+    --blue: #0000FF;
+    --sub-text-shadow: 1px 1px 1px gold;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV PART */
+
+.navbar {
+    /* background-color: rgb(23, 52, 120); */
+    /* background: linear-gradient(to left, rgba(135, 206, 235, 1), rgba(0, 0, 128, 1)); */
+    background: linear-gradient(to left, rgba(0, 102, 204, 1), rgba(0, 0, 128, 1));
+    box-shadow: 2px 2px 4px var(--yellow-gold);
+}
+
+.logo img {
+    width: 120px;
+
+}
+
+.nav-link {
+    /* color: goldenrod; */
+    color: rgb(255, 223, 0);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  */
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: rgb(250, 8, 8);
+}
+
+.active {
+    color: rgb(248, 7, 7) !important;
+}
+
+.navbar-toggler {
+    background-color: goldenrod;
+    border: 2px solid white;
+}
+
+.t-icon {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: var(--yellow-gold);
+}
+
+/* ....... */
+/* sticky navbar */
+
+nav {
+	/* padding: 25px 0; */
+	/* background-color: rgb(189, 3, 3); */
+	position: -webkit-sticky;
+	/* text-align: center; */
+	/* color:orange;
+	font-weight: bold;
+	font-style:italic; */
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+/* ........ */
+
+
+
+/* WEDDING PART */
+
+.wedding-part {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* background: linear-gradient(to left, rgba(0, 102, 204, 1), rgba(0, 0, 128, 1)); */
+    background-color: var(--dark-blue);
+}
+
+.wedding-heading {
+    margin-bottom: 50px;
+}
+
+.w-heading h3 {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    color: var(--yellow-gold);
+    text-shadow: var(--shadow);
+}
+
+.wedding-part img {
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.wedding-part img:hover {
+    transform: scale(1.1); /*Zooms in the image*/
+   
+}
+
+.w-img{
+    height: 99%;
+}
+
+
+/* PRE WEDDING PART */
+
+.prewedding-part {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to left, rgba(0, 102, 204, 1), rgba(0, 0, 128, 1));
+    border-top: 2px solid goldenrod;
+}
+
+.pre-heading {
+    margin-bottom: 50px;
+}
+
+.pre-heading h3 {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    color: var(--yellow-gold);
+    text-shadow: var(--shadow);
+}
+
+.pre-wedding-div {
+    position: relative;
+}
+
+.pre-wedding-text {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    background-image: linear-gradient(rgba(115, 113, 113, 0.3), rgba(115, 113, 113, 0.3));
+}
+
+.pre-wedding-text .p20 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: var(--yellow-gold);
+}
+
+.pre-wedding-div img {
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.pre-wedding-div img:hover {
+    transform: scale(1.1);
+    /* Zooms in the image */
+}
+
+/* BABY PHOTOGRAPHY PART */
+.baby-photography {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--dark-blue);
+    border-top: 2px solid goldenrod;
+}
+
+.baby-text1 h3 {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    color: var(--yellow-gold);
+    text-shadow: var(--shadow);
+}
+
+.baby-heading {
+    margin-bottom: 50px;
+}
+
+.baby-photography-div {
+    position: relative;
+}
+
+.baby-text {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+    background-image: linear-gradient(rgba(115, 113, 113, 0.3), rgba(115, 113, 113, 0.3));
+}
+
+.baby-text .p20 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: var(--yellow-gold);
+}
+
+.baby-photography-div img {
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.baby-photography-div img:hover {
+    transform: scale(1.1);
+    /* Zooms in the image */
+}
+
+/* NEW BORN PART */
+
+#newborn {
+    border-top: 2px solid goldenrod;
+}
+
+/* ALL COPY BABY PHOTOGRAPHY */
+
+
+
+/* FOOTER PART */
+
+.footer-part {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to left, rgba(0, 102, 204, 1), rgba(0, 0, 128, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--yellow-gold);
+
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-text1 .p13 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px var(--yellow-gold);
+}
+
+.footer-text2 .p14 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.footer-icon .s3 {
+    font-size: 20px;
+
+}
+
+.footer-icondiv {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.footer-star {
+    margin-bottom: 30px;
+}
+
+.footer-star .s4 {
+    color: var(--yellow-gold);
+}
+
+.footer-div {
+    border-right: 2px solid goldenrod;
+
+    padding: 8px 10px;
+}
+
+/* COPY RIGHT PART */
+
+.copyright-part {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    margin-top: 50px;
+    border-top: 2px solid var(--yellow-gold);
+}
+
+.copyright-part .p15 {
+    font-family: "Satisfy", sans-serif;
+    font-size: 50px;
+    color: var(--yellow-gold);
+
+}
+
+.copyright-part .p16 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE PART */
+@media screen and (max-width:1440px) {
+
+    /* GALLERY PART */
+    /* WEDDING PART */
+    .mySwiper {
+        display: none;
+    }
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 200px;
+        opacity: 0.4;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {
+
+    /* GALLERY PART */
+
+    /* WEDDING PART */
+    .wedding-part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .wedding-heading {
+        margin-bottom: 20px;
+    }
+
+    .w-heading h3 {
+        font-size: 30px;
+
+    }
+
+
+
+    
+
+    /* PRE WEDDING PART */
+
+    .prewedding-part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pre-wedding-row {
+        margin-top: 20px !important;
+    }
+
+    .pre-heading h3 {
+        font-size: 30px;
+    }
+
+    /* BABY PHOTOGRAPHY PART */
+    .baby-photography {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    .baby-text1 h3 {
+        font-size: 30px;
+    }
+
+    .baby-heading {
+        margin-bottom: 50px;
+    }
+
+
+
+
+    /* FOOTER PART */
+
+    .footer-part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-div {
+        padding: 8px 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-star {
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width:767px) {
+
+    /* NAV PART */
+
+    .logo img {
+        width: 90px;
+    }
+
+    /* WEDDING PART */
+    .wedding-part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .wedding-heading {
+        margin-bottom: 20px;
+    }
+
+    .w-heading h3 {
+        font-size: 30px;
+
+    }
+
+    .w-img {
+        height: 300px;
+        text-align: center;
+        
+    }
+
+    .w-img img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .w-sub-col-img {
+        text-align: center;
+    }
+
+    .w-sub-col-img img {
+        width: 400px;
+
+    }
+
+     /* ..... */
+    /* GALLERY PART */
+    /* WEDDING PART */
+
+    .swiper {
+        width: 80%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 200px;
+        opacity: 0.4;
+    }
+
+
+
+    /* ..... */
+
+    /* PRE WEDDING PART */
+
+    .prewedding-part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pre-wedding-row {
+        margin-top: 20px !important;
+    }
+
+    .pre-heading h3 {
+        font-size: 30px;
+    }
+
+    .pre-wedding-div img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .pre-img {
+        text-align: center;
+    }
+
+    .pre-wedding-text {
+        display: none;
+    }
+
+
+    /* BABY PHOTOGRAPHY PART */
+    .baby-photography {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    .baby-text1 h3 {
+        font-size: 30px;
+    }
+
+    .baby-heading {
+        margin-bottom: 50px;
+    }
+
+    .baby-photo-row {
+        margin-top: 20px !important;
+    }
+
+    .baby-photography-div img {
+
+        width: 400px;
+        height: 300px;
+    }
+
+    .baby-img {
+        text-align: center;
+    }
+
+    .baby-text {
+        display: none;
+    }
+
+
+
+
+    /* FOOTER PART */
+
+    .footer-part {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-div {
+        padding: 8px 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-star {
+        margin-bottom: 10px;
+    }
+
+    .footer-text1 .p13 {
+        font-size: 18px;
+    }
+
+    .footer-text2 .p14 {
+        font-size: 14px;
+    }
+
+
+    .footer-icondiv {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: goldenrod;
+    }
+
+    .footer-icon .s3 {
+        font-size: 15px;
+
+    }
+
+    /* COPYRIGHT PART */
+
+    .copyright-part .p15 {
+        font-size: 30px;
+
+    }
+
+    .copyright-part .p16 {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media screen and (max-width:575px) {
+
+    /* WEDDING PART */
+
+    .wedding-heading {
+        margin-bottom: 20px;
+    }
+
+    .w-heading h3 {
+
+        font-size: 20px;
+
+    }
+
+    .w-sub-col-img img {
+        width: 280px;
+
+    }
+
+     /* ..... */
+    /* GALLERY PART */
+    /* WEDDING PART */
+
+    .swiper {
+        width: 70%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    
+    .swiper-button-next{
+        display: none;
+       }
+       .swiper-button-prev{
+        display: none;
+    
+       }
+    
+     .mySwiper2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 200px;
+        opacity: 0.4;
+    }
+
+    /* PRE WEDDING PART */
+
+    .prewedding-part {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pre-wedding-row {
+        margin-top: 20px !important;
+    }
+
+    .pre-heading {
+        margin-bottom: 20px;
+    }
+
+    .pre-heading h3 {
+        font-size: 20px;
+    }
+
+    .pre-wedding-div img {
+        width: 280px;
+        height: 200px;
+    }
+
+    .pre-img {
+        text-align: center;
+    }
+
+    .pre-wedding-text {
+        display: none;
+    }
+
+    /* BABY PHOTOGRAPHY PART */
+    .baby-photography {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .baby-text1 h3 {
+        font-size: 20px;
+    }
+
+    .baby-heading {
+        margin-bottom: 20px;
+    }
+
+    .baby-photo-row {
+        margin-top: 20px !important;
+    }
+
+    .baby-photography-div img {
+
+        width: 280px;
+        height: 200px;
+    }
+
+
+    /* FOOTER PART */
+
+    /* COPYRIGHT PART */
+
+    .copyright-part .p15 {
+        font-size: 20px;
+
+    }
+
+    .copyright-part .p16 {
+        font-size: 8px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:479px) {}
